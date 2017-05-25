@@ -1,12 +1,28 @@
+@font-face {
+  font-family: 'Cavorting-Regular';
+  src: url('Cavorting-Regular.eot');
+  src: url('Cavorting-Regular.woff2') format('woff2'),
+       url('Cavorting-Regular.woff') format('woff'),
+       url('Cavorting-Regular.ttf') format('truetype'),
+       url('Cavorting-Regular.svg#Cavorting-Regular') format('svg'),
+       url('Cavorting-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background-image: url("https://www.muralswallpaper.co.uk/app/uploads/bare-concrete-wall-textures-plain-820x532.jpg");
+    background-size: 100%;
+    background-color: #cccccc;
+}
+
 .container {
     position: absolute;
-    width: 50%;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-70%);
 	padding: 10px 25px 10px;
-    background-color: white;
-    opacity: .7
 }
 
 .cover {
@@ -16,14 +32,15 @@
 }
 
 h1 {
-  	font-size: 3em;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+  	font-size: 10vw;
+    font-family: Cavorting-Regular, "Trebuchet MS", Arial, sans-serif;
+    color: #000000;
 }
 
 a {
-	font-size: 1.4em;
+	font-size: 4vw;
 	padding: 10px 25px 10px;
-    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+    font-family: Cavorting-Regular, "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
 a:link {
