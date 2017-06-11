@@ -1,60 +1,109 @@
-@font-face {
-  font-family: 'Cavorting-Regular';
-  src: url('Cavorting-Regular.eot');
-  src: url('Cavorting-Regular.woff2') format('woff2'),
-       url('Cavorting-Regular.woff') format('woff'),
-       url('Cavorting-Regular.ttf') format('truetype'),
-       url('Cavorting-Regular.svg#Cavorting-Regular') format('svg'),
-       url('Cavorting-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+/*
+** Containers
+*/
+
+.box {
+    border:1px solid black;
 }
 
-body {
-    background-image: url("https://www.muralswallpaper.co.uk/app/uploads/bare-concrete-wall-textures-plain-820x532.jpg");
-    background-size: 100%;
-    background-color: #cccccc;
+.container-fluid#main {
+    height:100%;
+    background:#42f4d7;
 }
 
-.container {
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-70%);
-	padding: 10px 25px 10px;
+/*
+** Text
+*/
+
+.cv {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.cover {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
+h1#main {
+    font-family:Pacifico;
 }
 
-h1 {
-  	font-size: 10vw;
-    font-family: Cavorting-Regular, "Trebuchet MS", Arial, sans-serif;
-    color: #000000;
+#cv-header {
+    font-family:'Quicksand';
+    font-weight:200;
 }
 
-a {
-	font-size: 4vw;
-	padding: 10px 25px 10px;
-    font-family: Cavorting-Regular, "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+#date {
+    text-align:left;
+    font-size:.95em;
+}
+@media screen and (min-width: 768px){
+    #date{
+        text-align:right;
+    }
 }
 
-a:link {
-    text-decoration: none;
+
+span#job {
+    font-weight:600;
+    font-size:1.1em;
 }
 
-a:hover {
-    text-decoration: none;
+.summary#top {
+    margin:0 0 0 10px;
 }
 
-a:visited {
-    text-decoration: none;
+.summary#bottom {
+    margin:0 0 0 10px;
 }
 
-a:active {
-    text-decoration: none;
+li#cv {
+    font-size:.95em;
+    margin: 5px;
+}
+
+/*
+** Borders
+*/
+
+
+.top {
+    border-top: 1px solid;
+}
+
+.bottom {
+    border-bottom: 1px solid;
+}
+
+/*
+** Nav
+*/
+
+.list-inline#main {
+    padding-top:40px;
+}
+
+.list-inline#cv {
+    padding-top:10px;
+}
+
+.list-inline#main li a,
+.list-inline#cv li a {
+    padding:20px 40px;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-family:'Quicksand', sans-serif;
+    font-weight:900;
+    font-size:2em;
+    color:#000000;
+}
+
+.list-inline#main li a:hover,
+.list-inline#cv li a:hover {
+    color:#ef0edc;
+}
+
+a#cv {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:underline;
+    color:#000000;
+}
+
+a#cv:hover {
+    color:#ef0edc;
 }
