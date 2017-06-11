@@ -44,12 +44,8 @@ span#job {
     font-size:1.1em;
 }
 
-.summary#top {
-    margin:0 0 0 10px;
-}
-
-.summary#bottom {
-    margin:0 0 0 10px;
+#top {
+    margin-top:10px;
 }
 
 li#cv {
@@ -61,10 +57,6 @@ li#cv {
 ** Borders
 */
 
-
-.top {
-    border-top: 1px solid;
-}
 
 .bottom {
     border-bottom: 1px solid;
